@@ -1,0 +1,5 @@
+C:\C #\Seminario_2013\Seminario_2013\Primeras_Pruevas\bin\Debug\Primeras_Pruevas.exe
+C:\C #\Seminario_2013\Seminario_2013\Primeras_Pruevas\bin\Debug\Primeras_Pruevas.pdb
+C:\C #\Seminario_2013\Seminario_2013\Primeras_Pruevas\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\C #\Seminario_2013\Seminario_2013\Primeras_Pruevas\obj\x86\Debug\Primeras_Pruevas.exe
+C:\C #\Seminario_2013\Seminario_2013\Primeras_Pruevas\obj\x86\Debug\Primeras_Pruevas.pdb
