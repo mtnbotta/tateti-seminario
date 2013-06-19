@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual C# Express 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Primeras_Pruevas", "Primeras_Pruevas\Primeras_Pruevas.csproj", "{15A07353-CAA1-413D-A6F0-D90A4AEC2EEA}"
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Primeras_Pruebas", "Primeras_Pruebas\Primeras_Pruebas.csproj", "{E09D18A1-B59E-444D-8A2B-D40341B2D158}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tateti", "tateti\tateti.csproj", "{657A2155-1072-4D50-B9D0-7DCB0F499E93}"
 EndProject
@@ -11,10 +11,10 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{15A07353-CAA1-413D-A6F0-D90A4AEC2EEA}.Debug|x86.ActiveCfg = Debug|x86
-		{15A07353-CAA1-413D-A6F0-D90A4AEC2EEA}.Debug|x86.Build.0 = Debug|x86
-		{15A07353-CAA1-413D-A6F0-D90A4AEC2EEA}.Release|x86.ActiveCfg = Release|x86
-		{15A07353-CAA1-413D-A6F0-D90A4AEC2EEA}.Release|x86.Build.0 = Release|x86
+		{E09D18A1-B59E-444D-8A2B-D40341B2D158}.Debug|x86.ActiveCfg = Debug|x86
+		{E09D18A1-B59E-444D-8A2B-D40341B2D158}.Debug|x86.Build.0 = Debug|x86
+		{E09D18A1-B59E-444D-8A2B-D40341B2D158}.Release|x86.ActiveCfg = Release|x86
+		{E09D18A1-B59E-444D-8A2B-D40341B2D158}.Release|x86.Build.0 = Release|x86
 		{657A2155-1072-4D50-B9D0-7DCB0F499E93}.Debug|x86.ActiveCfg = Debug|x86
 		{657A2155-1072-4D50-B9D0-7DCB0F499E93}.Debug|x86.Build.0 = Debug|x86
 		{657A2155-1072-4D50-B9D0-7DCB0F499E93}.Release|x86.ActiveCfg = Release|x86

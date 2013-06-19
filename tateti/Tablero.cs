@@ -8,27 +8,28 @@ namespace tateti
 {
     class Tablero
     {
-
-	// declarando el diccionario hash q manejara las pociciones del tablero
+        //Declarando diccionario hash que manejará las posiciones del tablero.
         public Hashtable posiciones;
-	
-	// metodo construcctor que inicializa las pociciones con un valor vacio
+
+        //Constructor que inicializa las posiciones en un valor vacío
         public Tablero()
         {
             posiciones = new Hashtable();
-            for (int x = 1; x < 10; x++)
-                posiciones.Add(x, " ");
+
+            for (int i = 1; i < 10; i++)
+                posiciones.Add(i, " ");
         }
-        
+
         public void PintarTablero()
         {
             Console.Clear();
 
-            for (int x = 1; x < 10; x++)
+            for (int i = 1; i < 10; i++)
             {
-                Console.Write("[{0}]", posiciones[x]);
-                //comprovamos si se imprimieron 3 posiciones y hacemos un salto de lina
-                if (x % 3 == 0)
+                Console.Write("[ {0} ] ", posiciones[i]);
+
+                //Comprobamos si "i" es módulo de 3, imprimo un salto de linea
+                if (i % 3 == 0)
                     Console.Write("\n");
             }
         }

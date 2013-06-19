@@ -1,7 +1,7 @@
-C:\C #\Seminario_2013\Seminario_2013\tateti\bin\Debug\tateti.exe
-C:\C #\Seminario_2013\Seminario_2013\tateti\bin\Debug\tateti.pdb
-C:\C #\Seminario_2013\Seminario_2013\tateti\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\C #\Seminario_2013\Seminario_2013\tateti\obj\x86\Debug\tateti.exe
-C:\C #\Seminario_2013\Seminario_2013\tateti\obj\x86\Debug\tateti.pdb
+C:\Users\MARRAS\Documents\Visual Studio 2010\Projects\Seminario 2013\Seminario2013\tateti\bin\Debug\tateti.exe
+C:\Users\MARRAS\Documents\Visual Studio 2010\Projects\Seminario 2013\Seminario2013\tateti\bin\Debug\tateti.pdb
+C:\Users\MARRAS\Documents\Visual Studio 2010\Projects\Seminario 2013\Seminario2013\tateti\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\MARRAS\Documents\Visual Studio 2010\Projects\Seminario 2013\Seminario2013\tateti\obj\x86\Debug\tateti.exe
+C:\Users\MARRAS\Documents\Visual Studio 2010\Projects\Seminario 2013\Seminario2013\tateti\obj\x86\Debug\tateti.pdb
+C:\C#\Seminario_2013\Seminario_2013\tateti\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\C#\Seminario_2013\Seminario_2013\tateti\obj\x86\Debug\tateti.exe
-C:\C#\Seminario_2013\Seminario_2013\tateti\obj\x86\Debug\tateti.pdb
