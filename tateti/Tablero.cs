@@ -23,7 +23,7 @@ namespace tateti
         public void Limpiar()
         {
             for (int i = 1; i < 10; i++)
-                posiciones.Add(i, "  ");
+                posiciones[i]= "  ";
         }
         public void PintarTablero()
         {
