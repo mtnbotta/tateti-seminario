@@ -17,9 +17,14 @@ namespace tateti
             posiciones = new Hashtable();
 
             for (int i = 1; i < 10; i++)
-                posiciones.Add(i, " ");
+                posiciones.Add(i, "  ");
         }
 
+        public void Limpiar()
+        {
+            for (int i = 1; i < 10; i++)
+                posiciones.Add(i, "  ");
+        }
         public void PintarTablero()
         {
             Console.Clear();

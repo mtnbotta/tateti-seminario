@@ -14,11 +14,15 @@ namespace tateti
 
             //Inicializamos las variables.
             int jugadorActual = 1, fichaActual = 1;
+            Juego juego = new Juego();
+            
+
+            
 
             //Iniciamos un bucle que dure indefinidamente, hasta que el juego finalice.
             while (true)
             {
-                tablero.PintarTablero();
+                juego.tablero.PintarTablero();
 
                 if (fichaActual == 0)
                 {
@@ -29,9 +33,8 @@ namespace tateti
                 Console.Write("Jugador {0}: Digame que posición pondrá la ficha \"{1}\": ", jugadorActual, fichaActual);
 
                 int posicionElegida = Convert.ToInt32(Console.ReadLine());
-                jugador1.posiciones[fichaActual] = posicionElegida;
 
-                tablero.Jugar(jugadorActual, fichaActual, posicionElegida);
+                juego.Jugar(jugadorActual, fichaActual, posicionElegida);
 
                 jugadorActual++;
 

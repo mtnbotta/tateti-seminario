@@ -23,9 +23,9 @@ namespace tateti
         public void Jugar(int jugador, int ficha, int posicion)
         {
             if (jugador == 1)
-                tablero.posiciones[posicion] = jugador1.tipoFicha;
+                tablero.posiciones[posicion] = jugador1.tipoFicha+ficha.ToString();
             else
-                tablero.posiciones[posicion] = jugador2.tipoFicha;
+                tablero.posiciones[posicion] = jugador2.tipoFicha+ficha.ToString();
         }
     }
 }
