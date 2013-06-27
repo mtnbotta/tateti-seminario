@@ -26,17 +26,16 @@ namespace tateti
 
                 if (fichaActual == 0)
                 {
-                    Console.Write("Jugador {0}: Ingrese el número de ficha a mover: ", jugadorActual);
-                    int ficha_a_mover = Convert.ToInt32(Console.ReadLine());
-                    Console.Write("Jugador {0}: Digame que posición pondrá la ficha \"{1}\": ", jugadorActual, ficha_a_mover);
-                    int posicionElegida = Convert.ToInt32(Console.ReadLine());
+                    //pedimos al usuario que defina la ficha a mover
+                    int ficha_a_mover = juego.SeleccionarFicha(jugadorActual);               
+                    int posicionElegida = juego.SeleccionarPosicion(jugadorActual, ficha_a_mover);
                     juego.Jugar(jugadorActual, ficha_a_mover, posicionElegida);
                 }
 
                 else
                 {
-                    Console.Write("Jugador {0}: Digame que posición pondrá la ficha \"{1}\": ", jugadorActual, fichaActual);
-                    int posicionElegida = Convert.ToInt32(Console.ReadLine());
+                    int posicionElegida = juego.SeleccionarPosicion(jugadorActual, fichaActual);
+                    
                     juego.Jugar(jugadorActual, fichaActual, posicionElegida);
 
                 }
