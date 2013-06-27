@@ -29,8 +29,28 @@ namespace tateti
         }
         public int SeleccionarPosicion(int jugador, int ficha)
         {
-            Console.Write("Jugador {0}: Digame que posición pondrá la ficha \"{1}\": ", jugador, ficha);
-            int posicionElegida = Convert.ToInt32(Console.ReadLine());
+            int posicionElegida=0;
+            
+            do
+            {
+                Console.Write("Jugador {0}: Digame que posición pondrá la ficha \"{1}\": ", jugador, ficha);
+                try
+                {
+                    posicionElegida = Convert.ToInt32(Console.ReadLine());
+                }
+                catch
+                {
+                    posicionElegida = 0;
+                }
+                               
+                if (posicionElegida<1||posicionElegida>9)
+                {
+                    Console.WriteLine("Error, Posicion No Válida");
+                    Console.ReadLine();
+                }
+
+            } while (posicionElegida < 1 || posicionElegida > 9);
+            
             return posicionElegida;
         }
 
