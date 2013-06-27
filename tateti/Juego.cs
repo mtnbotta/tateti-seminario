@@ -71,6 +71,13 @@ namespace tateti
                     Console.ReadLine();
                 }
 
+                if (!tablero.ControlPosicionVacia(posicionElegida))
+                {
+                    Console.WriteLine("Error, Posicion Ocupada");
+                    Console.ReadLine();
+                    posicionElegida = 0;
+                }
+
             } while (posicionElegida < 1 || posicionElegida > 9);
             
             return posicionElegida;
