@@ -23,10 +23,32 @@ namespace tateti
 
         public int SeleccionarFicha(int jugador)
         {
-            Console.Write("Jugador {0}: Ingrese el número de ficha a mover: ", jugador);
-            int ficha_a_mover = Convert.ToInt32(Console.ReadLine());
+            int ficha_a_mover = 0;
+            
+            do
+            {
+                Console.Write("Jugador {0}: Ingrese el número de ficha a mover: ", jugador);
+               
+                try
+                {
+                    ficha_a_mover = Convert.ToInt32(Console.ReadLine());
+                }
+                catch
+                {
+                    ficha_a_mover=0;
+                }
+
+                if (ficha_a_mover<1||ficha_a_mover>3)
+                {
+                    Console.WriteLine("Error, Ficha No Válida");
+                    Console.ReadLine();
+                }
+
+            } while (ficha_a_mover<1||ficha_a_mover>3);
+            
             return ficha_a_mover;
         }
+
         public int SeleccionarPosicion(int jugador, int ficha)
         {
             int posicionElegida=0;
