@@ -8,10 +8,11 @@ namespace tateti
 {
     class Juego
     {
-        //Declaramos los objetos.
+        //Declaramos las propiedads.
         public Tablero tablero;
         public Jugador jugador1;
         public Jugador jugador2;
+        int[,] jugadas_ganadoras;
 
         public Juego()
         {
@@ -19,7 +20,84 @@ namespace tateti
             tablero = new Tablero();
             jugador1 = new Jugador("X");
             jugador2 = new Jugador("O");
+            jugadas_ganadoras = new int[8, 3];
+
+            //jugadas_ganadoras[nro_jugada,nro_ficha]=posicion_ficha
+            jugadas_ganadoras[0, 0] = 1;
+            jugadas_ganadoras[0, 1] = 2;
+            jugadas_ganadoras[0, 2] = 3;
+            jugadas_ganadoras[1, 0] = 3;
+            jugadas_ganadoras[1, 1] = 6;
+            jugadas_ganadoras[1, 2] = 9;
+            jugadas_ganadoras[2, 0] = 7;
+            jugadas_ganadoras[2, 1] = 8;
+            jugadas_ganadoras[2, 2] = 9;
+            jugadas_ganadoras[3, 0] = 1;
+            jugadas_ganadoras[3, 1] = 4;
+            jugadas_ganadoras[3, 2] = 7;
+            jugadas_ganadoras[4, 0] = 1;
+            jugadas_ganadoras[4, 1] = 5;
+            jugadas_ganadoras[4, 2] = 9;
+            jugadas_ganadoras[5, 0] = 2;
+            jugadas_ganadoras[5, 1] = 5;
+            jugadas_ganadoras[5, 2] = 8;
+            jugadas_ganadoras[6, 0] = 3;
+            jugadas_ganadoras[6, 1] = 5;
+            jugadas_ganadoras[6, 2] = 7;
+            jugadas_ganadoras[7, 0] = 4;
+            jugadas_ganadoras[7, 1] = 5;
+            jugadas_ganadoras[7, 2] = 6;
+
         }
+
+        public bool ComprobarGanador()
+        { 
+            int acierto1=0;
+            int acierto2=0;
+
+            for (int i = 0; i < 8; i++)
+            {
+                //comprueba el jugador 1
+                if ((jugadas_ganadoras[i, 0] == (int)jugador1.fichas[1]) ||
+                    (jugadas_ganadoras[i, 0] == (int)jugador1.fichas[2]) ||
+                    (jugadas_ganadoras[i, 0] == (int)jugador1.fichas[3]))
+                    acierto1++;
+
+                if ((jugadas_ganadoras[i, 1] == (int)jugador1.fichas[1]) ||
+                    (jugadas_ganadoras[i, 1] == (int)jugador1.fichas[2]) ||
+                    (jugadas_ganadoras[i, 1] == (int)jugador1.fichas[3]))
+                    acierto1++;
+
+                if ((jugadas_ganadoras[i, 2] == (int)jugador1.fichas[1]) ||
+                    (jugadas_ganadoras[i, 2] == (int)jugador1.fichas[2]) ||
+                    (jugadas_ganadoras[i, 2] == (int)jugador1.fichas[3]))
+                    acierto1++;
+
+                //comprueba el jugador 2
+                if ((jugadas_ganadoras[i, 0] == (int)jugador2.fichas[1]) ||
+                    (jugadas_ganadoras[i, 0] == (int)jugador2.fichas[2]) ||
+                    (jugadas_ganadoras[i, 0] == (int)jugador2.fichas[3]))
+                    acierto2++;
+
+                if ((jugadas_ganadoras[i, 1] == (int)jugador2.fichas[1]) ||
+                    (jugadas_ganadoras[i, 1] == (int)jugador2.fichas[2]) ||
+                    (jugadas_ganadoras[i, 1] == (int)jugador2.fichas[3]))
+                    acierto2++;
+
+                if ((jugadas_ganadoras[i, 2] == (int)jugador2.fichas[1]) ||
+                    (jugadas_ganadoras[i, 2] == (int)jugador2.fichas[2]) ||
+                    (jugadas_ganadoras[i, 2] == (int)jugador2.fichas[3]))
+                    acierto2++;
+                
+                if (acierto1 == 3 || acierto2 == 3)
+                    return true;
+
+                acierto1 = 0;
+                acierto2 = 0;
+            }
+            return false;
+        }   
+
 
         public int SeleccionarFicha(int jugador)
         {
@@ -143,6 +221,8 @@ namespace tateti
 
             tablero.PintarTablero();
         }
+
+
 
         
         public void Jugar(int jugador, int ficha, int posicion)

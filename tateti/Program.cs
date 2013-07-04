@@ -23,6 +23,12 @@ namespace tateti
             while (true)
             {
                 juego.PintarTablero();
+                if (juego.ComprobarGanador())
+                {
+                    Console.WriteLine("Existe Un Ganador");
+                    Console.ReadLine();
+                    return;
+                }
 
                 if (fichaActual == 0)
                 {
@@ -40,6 +46,8 @@ namespace tateti
 
                 }
                 jugadorActual++;
+
+
 
                 if (jugadorActual == 3)
                 {
