@@ -28,7 +28,7 @@ namespace tateti
 
         public bool ControlPosicionVacia(int posicion)
         {
-            if (posiciones[posicion] == "  ")
+            if ((string)posiciones[posicion] == "  ")
             {
                 return true;
             }
